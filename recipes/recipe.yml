@@ -16,5 +16,9 @@ modules:
         - net.mullvad.MullvadBrowser
       remove:
         - org.mozilla.firefox
-
+  - type: rpm-ostree
+    repos:
+      - https://repository.mullvad.net/rpm/stable/mullvad.repo
+    install:
+      - mullvad-vpn
   - type: signing
