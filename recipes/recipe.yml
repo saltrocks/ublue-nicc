@@ -13,7 +13,6 @@ modules:
         - com.logseq.Logseq
         - org.signal.Signal
         - org.telegram.desktop
-        - net.mullvad.MullvadBrowser
       remove:
         - org.mozilla.firefox
   - type: rpm-ostree
