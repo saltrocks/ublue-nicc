@@ -23,5 +23,5 @@ modules:
     install:
       - mullvad-vpn
       - mullvad-browser
-      - "https://eddie.website/download/?platform=linux&arch=x64&ui=ui&format=fedora.rpm&version=2.21.8&r=0.33153155417384705"
+      - "https://airvpn.org/mirrors/eddie.website/download/?platform=linux&arch=x64&ui=ui&format=fedora.rpm&version=experimental&r=0.0531527188578923"
   - type: signing
