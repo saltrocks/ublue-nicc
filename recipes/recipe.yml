@@ -5,6 +5,10 @@ description: This is my personal OS image.
 base-image: ghcr.io/ublue-os/bluefin-dx-nvidia
 image-version: latest
 modules:
+  - type: files
+    files:
+      - source: nftables
+        destination: /usr/etc/
   - type: default-flatpaks
     notify: true
     system:
@@ -20,8 +24,10 @@ modules:
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
     optfix:
       - Mullvad VPN
+      - windscribe
     install:
       - mullvad-vpn
       - mullvad-browser
       - "https://airvpn.org/mirrors/eddie.website/download/?platform=linux&arch=x64&ui=ui&format=fedora.rpm&version=experimental&r=0.0531527188578923"
+      - "https://deploy.totallyacdn.com/desktop-apps/2.12.7/windscribe_2.12.7_x86_64_fedora.rpm"
   - type: signing
