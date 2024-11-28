@@ -19,6 +19,7 @@ modules:
         - org.telegram.desktop
       remove:
         - org.mozilla.firefox
+        - org.gnome.Weather
   - type: rpm-ostree
     repos:
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
